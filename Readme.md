@@ -14,7 +14,7 @@ We do not support any 2D barcodes, like QR codes. We also only generate the 'bar
 Install through [composer](https://getcomposer.org/doc/00-intro.md):
 
 ```
-composer require picqer/php-barcode-generator
+composer require joeybab3/php-barcode-generator
 ```
 
 If you want to generate PNG or JPG images, you need the GD library or Imagick installed on your system as well.
