@@ -93,6 +93,7 @@ abstract class BarcodeGenerator
     const TYPE_CODE_11 = 'CODE11';
     const TYPE_PHARMA_CODE = 'PHARMA';
     const TYPE_PHARMA_CODE_TWO_TRACKS = 'PHARMA2T';
+    const TYPE_ITF_14 = "ITF14";
 
     protected function getBarcodeData(string $code, string $type): Barcode
     {
@@ -193,6 +194,9 @@ abstract class BarcodeGenerator
 
             case self::TYPE_PHARMA_CODE_TWO_TRACKS:
                 return new TypePharmacodeTwoCode();
+            
+            case self::TYPE_ITF_14:
+                return new TypeItf14();
         }
 
         throw new UnknownTypeException();
